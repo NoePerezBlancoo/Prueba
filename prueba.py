@@ -53,3 +53,41 @@ git commit -m "Añadir prueba.py"
 
 # 6. Subir los cambios a GitHub
 git push origin main
+
+
+Pasos para actualizar un archivo en Git:
+Verifica que estés en el directorio del repositorio: Asegúrate de estar en la carpeta del repositorio que clonaste. Usa este comando para navegar al directorio:
+
+bash
+Copiar código
+cd C:\Users\M.GONZALEZ\Prueba
+Verifica el estado de Git: Puedes usar este comando para ver qué archivos han sido modificados:
+
+bash
+Copiar código
+git status
+Esto te mostrará los archivos que han cambiado. Verás tu archivo .py como modificado (aparecerá en rojo).
+
+Añade el archivo modificado al área de preparación: Añade el archivo modificado para que esté listo para ser "commiteado":
+
+bash
+Copiar código
+git add prueba.py
+Haz un commit de los cambios: Haz un commit para guardar los cambios localmente con un mensaje explicativo:
+
+bash
+Copiar código
+git commit -m "Actualizar prueba.py con los nuevos cambios"
+Sube los cambios a GitHub (push): Finalmente, sube los cambios al repositorio remoto en GitHub con el siguiente comando:
+
+bash
+Copiar código
+git push origin main
+Resumen de comandos:
+bash
+Copiar código
+cd C:\Users\M.GONZALEZ\Prueba   # Ve al directorio del repositorio
+git status                      # Verifica los cambios
+git add prueba.py                # Añadir el archivo modificado
+git commit -m "Actualizar prueba.py con los nuevos cambios"   # Haz commit de los cambios
+git push origin main             # Sube los cambios a GitHub
