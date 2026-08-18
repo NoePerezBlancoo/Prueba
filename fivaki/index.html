@@ -1,30 +1,153 @@
 <!doctype html>
 <html lang="es">
 <head>
-<meta charset="utf-8" />
-<meta name="viewport" content="width=device-width,initial-scale=1" />
-<meta name="theme-color" content="#070b14" />
-<title>Fivaki — Entrena. Progresa. Evoluciona.</title>
-<meta name="description" content="Fivaki convierte tu progreso físico en una experiencia social y gamificada. Entrena, gana XP, mantén rachas, supera retos y haz evolucionar a tu personaje." />
-<style>
-:root{--bg:#070b14;--panel:#0d1422;--panel2:#10192a;--text:#f7f9fc;--muted:#9ca9bd;--a:#7c5cff;--b:#00e7a8;--line:rgba(255,255,255,.09);--shadow:0 24px 80px rgba(0,0,0,.34)}*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:radial-gradient(circle at 12% 8%,rgba(124,92,255,.22),transparent 30%),radial-gradient(circle at 88% 22%,rgba(0,231,168,.12),transparent 26%),var(--bg);color:var(--text);font-family:Inter,ui-sans-serif,system-ui,-apple-system,Segoe UI,Roboto,sans-serif}.wrap{width:min(1160px,calc(100% - 36px));margin:auto}.topbar{position:sticky;top:0;z-index:30;background:rgba(7,11,20,.78);backdrop-filter:blur(18px);border-bottom:1px solid rgba(255,255,255,.05)}nav{display:flex;align-items:center;justify-content:space-between;padding:16px 0}.brand{font-weight:950;letter-spacing:.08em;font-size:21px}.brand i{font-style:normal;color:var(--b)}.navlinks{display:flex;align-items:center;gap:22px}.navlinks a{color:#b7c2d1;text-decoration:none;font-size:14px;font-weight:700}.navright{display:flex;gap:10px;align-items:center}select{background:#0d1422;color:#fff;border:1px solid var(--line);border-radius:12px;padding:9px 11px}.btn{display:inline-flex;align-items:center;justify-content:center;text-decoration:none;padding:14px 20px;border-radius:15px;font-weight:900;border:1px solid var(--line);transition:.2s;cursor:pointer}.btn:hover{transform:translateY(-2px)}.primary{background:linear-gradient(135deg,var(--a),#5c3bff);color:#fff;box-shadow:0 16px 40px rgba(92,59,255,.28)}.secondary{color:#fff;background:rgba(255,255,255,.04)}.hero{min-height:80vh;display:grid;grid-template-columns:1.08fr .92fr;align-items:center;gap:58px;padding:70px 0 86px}.badge{display:inline-flex;padding:8px 12px;border:1px solid rgba(0,231,168,.28);background:rgba(0,231,168,.07);color:#9af7dd;border-radius:999px;font-size:13px;font-weight:800}h1{font-size:clamp(48px,7vw,84px);line-height:.96;letter-spacing:-.055em;margin:20px 0 22px;max-width:780px}.gradient{background:linear-gradient(90deg,#fff 0%,#a995ff 42%,#00e7a8 100%);-webkit-background-clip:text;background-clip:text;color:transparent}.lead{font-size:clamp(18px,2vw,22px);line-height:1.62;color:#bac5d4;max-width:690px}.actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:30px}.mini{color:#78869b;font-size:13px;margin-top:14px}.hero-proof{display:flex;gap:22px;flex-wrap:wrap;margin-top:28px;color:#9dabbf;font-size:13px;font-weight:700}.hero-proof span{display:flex;align-items:center;gap:7px}.phone{justify-self:center;width:min(340px,88vw);aspect-ratio:.51;background:linear-gradient(180deg,#111827,#0b101a);border:1px solid rgba(255,255,255,.14);border-radius:42px;padding:12px;box-shadow:0 32px 90px rgba(0,0,0,.55),0 0 0 6px rgba(255,255,255,.025)}.screen{height:100%;border-radius:32px;overflow:hidden;background:radial-gradient(circle at 50% 18%,rgba(124,92,255,.32),transparent 25%),linear-gradient(180deg,#0d1422,#090d16);padding:26px 20px;position:relative}.notch{width:92px;height:23px;background:#04070d;border-radius:0 0 16px 16px;position:absolute;top:0;left:50%;transform:translateX(-50%)}.avatar{width:160px;height:160px;margin:55px auto 20px;border-radius:50%;display:grid;place-items:center;font-size:76px;background:radial-gradient(circle,#2d3f55,#121b29);box-shadow:0 0 60px rgba(0,231,168,.17);border:1px solid rgba(0,231,168,.25)}.level{text-align:center;font-size:13px;color:#8ea1b8}.level strong{display:block;font-size:26px;color:#fff;margin-top:4px}.bar{height:8px;background:#161e2a;border-radius:99px;margin:16px 0;overflow:hidden}.bar span{display:block;width:72%;height:100%;background:linear-gradient(90deg,var(--a),var(--b));border-radius:inherit}.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:8px}.stat{background:rgba(255,255,255,.045);border:1px solid var(--line);border-radius:14px;padding:12px 7px;text-align:center}.stat b{display:block;font-size:18px}.stat small{font-size:10px;color:#8c9aae}.section{padding:96px 0}.eyebrow{color:#8c7aff;font-weight:900;text-transform:uppercase;letter-spacing:.13em;font-size:12px}.section h2{font-size:clamp(36px,5vw,58px);letter-spacing:-.045em;margin:10px 0 15px}.sub{color:#9dabbf;font-size:18px;line-height:1.65;max-width:740px}.grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:38px}.card{background:linear-gradient(180deg,rgba(255,255,255,.055),rgba(255,255,255,.025));border:1px solid var(--line);border-radius:22px;padding:26px}.icon{font-size:30px}.card h3{font-size:21px;margin:16px 0 9px}.card p{color:#98a6ba;line-height:1.62;margin:0}.steps{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-top:38px}.step{position:relative;padding:28px 22px;background:var(--panel);border:1px solid var(--line);border-radius:22px}.num{width:34px;height:34px;border-radius:10px;display:grid;place-items:center;background:rgba(124,92,255,.16);color:#b8a9ff;font-weight:950}.step h3{margin:18px 0 8px}.step p{margin:0;color:#98a6ba;line-height:1.55}.split{display:grid;grid-template-columns:1fr 1fr;gap:46px;align-items:center}.feature-list{display:grid;gap:14px;margin-top:28px}.feature{display:flex;gap:14px;padding:17px;border-radius:18px;background:rgba(255,255,255,.035);border:1px solid var(--line)}.feature b{display:block;margin-bottom:4px}.feature span{color:#98a6ba;line-height:1.55}.mock{background:linear-gradient(145deg,rgba(124,92,255,.14),rgba(0,231,168,.06));border:1px solid var(--line);border-radius:28px;padding:28px;box-shadow:var(--shadow)}.rank{display:flex;align-items:center;justify-content:space-between;padding:15px 0;border-bottom:1px solid var(--line)}.rank:last-child{border-bottom:0}.rank small{color:#8d9bb0}.rank strong{font-size:18px}.pill{padding:7px 10px;border-radius:999px;background:rgba(0,231,168,.08);color:#80f0cf;font-size:12px;font-weight:900}.trust{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:34px}.faq{display:grid;gap:12px;max-width:860px;margin-top:34px}.faq details{background:rgba(255,255,255,.035);border:1px solid var(--line);border-radius:18px;padding:18px 20px}.faq summary{cursor:pointer;font-weight:850}.faq p{color:#98a6ba;line-height:1.6;margin:12px 0 2px}.cta{margin:76px 0 86px;padding:54px;border-radius:30px;border:1px solid rgba(124,92,255,.28);background:linear-gradient(135deg,rgba(124,92,255,.15),rgba(0,231,168,.08));text-align:center}.cta h2{margin:0 0 12px;font-size:clamp(36px,5vw,56px);letter-spacing:-.04em}.cta .sub{margin:0 auto 24px}.waitlist{display:flex;gap:10px;max-width:560px;margin:24px auto 0}.waitlist input{flex:1;background:#0a101b;color:#fff;border:1px solid var(--line);border-radius:14px;padding:14px 15px;font:inherit;min-width:0}.waitmsg{font-size:13px;color:#86eacb;margin-top:12px;min-height:18px}footer{border-top:1px solid var(--line);padding:28px 0 42px;color:#718097;font-size:13px;display:flex;justify-content:space-between;gap:20px}@media(max-width:900px){.navlinks{display:none}.hero{grid-template-columns:1fr;text-align:center;padding-top:46px}.lead,.sub{margin-left:auto;margin-right:auto}.actions,.hero-proof{justify-content:center}.phone{margin-top:14px}.grid3,.trust{grid-template-columns:1fr}.steps{grid-template-columns:1fr 1fr}.split{grid-template-columns:1fr}.section{text-align:center}.feature{text-align:left}.cta{padding:38px 22px}}@media(max-width:560px){.navright .secondary{display:none}.steps{grid-template-columns:1fr}.waitlist{flex-direction:column}.cta{margin-left:0;margin-right:0}.hero-proof{gap:12px}.section{padding:76px 0}footer{flex-direction:column;text-align:center}}
-</style>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#080d19">
+  <meta name="color-scheme" content="dark">
+  <title>FIVAKI — Convierte tus entrenos en victorias</title>
+  <meta name="description" content="FIVAKI es una experiencia fitness social y gamificada: entrena, gana XP, completa misiones, crea rachas y evoluciona con tu comunidad.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@400;500;600;700;800;900&family=Inter:wght@400;500;600;700;800&family=Orbitron:wght@700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-<header class="topbar"><div class="wrap"><nav><div class="brand">FIVAK<i>I</i></div><div class="navlinks"><a href="#benefits">Beneficios</a><a href="#how">Cómo funciona</a><a href="#community">Comunidad</a><a href="#faq">FAQ</a></div><div class="navright"><select id="lang" aria-label="Idioma"><option value="es">ES</option><option value="en">EN</option><option value="pt">PT</option><option value="fr">FR</option><option value="de">DE</option></select><a class="btn secondary" href="#download">Acceso beta</a></div></nav></div></header>
-<main class="wrap">
-<section class="hero"><div><span class="badge">⚡ Fitness + juego + comunidad</span><h1>Entrena de verdad.<br><span class="gradient">Haz evolucionar tu mundo.</span></h1><p class="lead">Fivaki convierte tus entrenamientos, rachas y retos en progreso visible dentro de una experiencia social gamificada. Tu personaje avanza cuando tú avanzas.</p><div class="actions"><a href="#download" class="btn primary">Quiero acceso beta</a><a href="#how" class="btn secondary">Ver cómo funciona</a></div><div class="mini">En desarrollo · Próximamente para Android y iOS</div><div class="hero-proof"><span>✓ Progreso visual</span><span>✓ Retos y rachas</span><span>✓ Comunidad competitiva</span></div></div><div class="phone"><div class="screen"><div class="notch"></div><div class="avatar">⚔️</div><div class="level">FIVAKI LEVEL<strong>27</strong></div><div class="bar"><span></span></div><div class="stats"><div class="stat"><b>18</b><small>DÍAS RACHA</small></div><div class="stat"><b>4.8K</b><small>XP</small></div><div class="stat"><b>12</b><small>LOGROS</small></div></div></div></div></section>
-<section class="section" id="benefits"><div class="eyebrow">POR QUÉ FIVAKI</div><h2>La motivación deja de depender solo de fuerza de voluntad.</h2><p class="sub">Fivaki añade feedback, progreso, objetivos y comunidad a algo que normalmente solo ves en una hoja de entrenamiento.</p><div class="grid3"><article class="card"><div class="icon">🧬</div><h3>Tu avatar evoluciona contigo</h3><p>Tus entrenamientos y tu constancia se transforman en progreso visual, niveles y desbloqueos.</p></article><article class="card"><div class="icon">🔥</div><h3>Rachas que quieres mantener</h3><p>Cada sesión cuenta. Mantén el impulso y convierte la disciplina en una mecánica que no quieres perder.</p></article><article class="card"><div class="icon">🏆</div><h3>Retos con un objetivo real</h3><p>Supera metas, compite, celebra hitos y da contexto a cada mejora física.</p></article><article class="card"><div class="icon">📈</div><h3>Progreso que se entiende</h3><p>Ve más allá del peso o las repeticiones: convierte tu evolución en una historia fácil de seguir.</p></article><article class="card"><div class="icon">🤝</div><h3>Una comunidad que empuja</h3><p>Comparte logros, descubre perfiles y encuentra motivación en personas con objetivos similares.</p></article><article class="card"><div class="icon">🎮</div><h3>Entrenar se siente diferente</h3><p>La lógica de niveles, XP y recompensas convierte la rutina en una experiencia con continuidad.</p></article></div></section>
-<section class="section" id="how"><div class="eyebrow">CÓMO FUNCIONA</div><h2>De entrenamiento a evolución en cuatro pasos.</h2><p class="sub">La idea es simple: tu actividad real alimenta tu progreso dentro de Fivaki.</p><div class="steps"><div class="step"><div class="num">1</div><h3>Entrena</h3><p>Completa tus sesiones y objetivos físicos.</p></div><div class="step"><div class="num">2</div><h3>Gana progreso</h3><p>Acumula XP, rachas, logros y avance.</p></div><div class="step"><div class="num">3</div><h3>Evoluciona</h3><p>Tu personaje y tu perfil reflejan tu constancia.</p></div><div class="step"><div class="num">4</div><h3>Compite y comparte</h3><p>Participa en retos y enseña tu evolución.</p></div></div></section>
-<section class="section" id="community"><div class="split"><div><div class="eyebrow">MÁS QUE UN TRACKER</div><h2>Tu progreso no termina cuando sales del gimnasio.</h2><p class="sub">Fivaki está pensado para unir progreso personal, identidad digital y comunidad en una sola experiencia.</p><div class="feature-list"><div class="feature"><div>⚔️</div><div><b>Identidad y evolución</b><span>Un perfil que refleja cuánto has avanzado y qué has conseguido.</span></div></div><div class="feature"><div>🥇</div><div><b>Retos y clasificación</b><span>Objetivos compartidos y comparativas para añadir una capa competitiva.</span></div></div><div class="feature"><div>📣</div><div><b>Logros que merece la pena compartir</b><span>Convierte hitos reales en momentos sociales dentro de la comunidad.</span></div></div></div></div><div class="mock"><div class="rank"><div><small>#1</small><strong>NovaWolf</strong></div><span class="pill">8,420 XP</span></div><div class="rank"><div><small>#2</small><strong>IronPulse</strong></div><span class="pill">7,980 XP</span></div><div class="rank"><div><small>#3</small><strong>FitRaven</strong></div><span class="pill">7,610 XP</span></div><div class="rank"><div><small>TÚ</small><strong>Level 27</strong></div><span class="pill">4,800 XP</span></div></div></div></section>
-<section class="section"><div class="eyebrow">DISEÑADO PARA QUE QUIERAS VOLVER</div><h2>Motivación, claridad y continuidad.</h2><p class="sub">Fivaki no promete resultados mágicos. Su objetivo es hacer que tu progreso sea más visible, más social y más difícil de abandonar.</p><div class="trust"><article class="card"><div class="icon">🎯</div><h3>Objetivos claros</h3><p>Sabes qué estás persiguiendo y qué desbloqueas al seguir avanzando.</p></article><article class="card"><div class="icon">⚡</div><h3>Feedback inmediato</h3><p>Cada acción relevante tiene una respuesta visible dentro de la experiencia.</p></article><article class="card"><div class="icon">🔁</div><h3>Motivo para volver</h3><p>Rachas, progresión y comunidad añaden continuidad entre una sesión y la siguiente.</p></article></div></section>
-<section class="section" id="faq"><div class="eyebrow">FAQ</div><h2>Preguntas frecuentes.</h2><div class="faq"><details><summary>¿Fivaki ya se puede descargar?</summary><p>Todavía no. La aplicación está en desarrollo y esta landing funcionará como punto oficial de acceso cuando la beta esté disponible.</p></details><details><summary>¿Estará disponible para Android y iOS?</summary><p>El objetivo es lanzar Fivaki en ambas plataformas. La disponibilidad final se comunicará aquí.</p></details><details><summary>¿Es solo una app para registrar entrenamientos?</summary><p>No. El concepto combina progreso físico, gamificación, identidad digital, retos y comunidad.</p></details><details><summary>¿Puedo apuntarme antes del lanzamiento?</summary><p>Sí. Puedes registrar tu interés desde esta página para formar parte de los primeros usuarios cuando abramos el acceso beta.</p></details></div></section>
-<section class="cta" id="download"><div class="eyebrow">ACCESO ANTICIPADO</div><h2>Tu siguiente nivel empieza fuera de la pantalla.</h2><p class="sub">Únete a la lista de interés y sé de los primeros en saber cuándo Fivaki abra su beta.</p><form class="waitlist" id="waitlist"><input id="email" type="email" required placeholder="tu@email.com" aria-label="Email"><button class="btn primary" type="submit">Quiero acceso beta</button></form><div class="waitmsg" id="waitmsg"></div><div class="mini">Sin spam. Solo novedades relevantes sobre el lanzamiento de Fivaki.</div></section>
-</main>
-<footer class="wrap"><span>© 2026 Fivaki</span><span>Red social gamificada de progreso físico.</span></footer>
-<script>
-const lang=document.getElementById('lang');const saved=localStorage.getItem('fivaki-lang')||'es';lang.value=saved;lang.addEventListener('change',e=>{localStorage.setItem('fivaki-lang',e.target.value);if(e.target.value!=='es') alert('La versión comercial completa está optimizada en español. Las traducciones completas se añadirán en la siguiente iteración.');});
-document.getElementById('waitlist').addEventListener('submit',e=>{e.preventDefault();const email=document.getElementById('email').value.trim();if(!email)return;localStorage.setItem('fivaki-beta-interest',email);document.getElementById('waitmsg').textContent='Perfecto. Interés registrado en este dispositivo.';e.target.reset()});
-</script>
+<div class="page">
+  <div class="site">
+    <header class="header">
+      <div class="container nav">
+        <a class="logo" href="#top" aria-label="FIVAKI"><img src="assets/logo.webp" alt="FIVAKI"></a>
+        <nav class="nav-links" aria-label="Principal">
+          <a href="#features" data-i18n="navFeatures">Características</a>
+          <a href="#how" data-i18n="navHow">Cómo funciona</a>
+          <a href="#squads" data-i18n="navSquads">Equipos</a>
+          <a href="#leaderboard" data-i18n="navLeaderboard">Clasificación</a>
+          <a href="#rewards" data-i18n="navRewards">Recompensas</a>
+          <a href="#faq" data-i18n="navFaq">FAQ</a>
+        </nav>
+        <div class="nav-actions">
+          <select class="lang" id="lang" aria-label="Idioma">
+            <option value="es">ES</option><option value="en">EN</option><option value="pt">PT</option><option value="fr">FR</option><option value="de">DE</option>
+          </select>
+          <a class="btn btn-ghost login" href="#beta" data-i18n="login">Entrar</a>
+          <a class="btn btn-primary" href="#beta"><span data-i18n="joinBeta">Únete a la beta</span><span class="btn-icon">→</span></a>
+          <button class="hamburger" type="button" aria-label="Menú" onclick="document.getElementById('features').scrollIntoView({behavior:'smooth'})">☰</button>
+        </div>
+      </div>
+    </header>
+
+    <main id="top">
+      <section class="hero">
+        <div class="container">
+          <div class="hero-grid">
+            <div class="hero-copy">
+              <span class="kicker"><span data-i18n="kicker1">Fitness social.</span> <b data-i18n="kicker2">Sube de nivel en equipo.</b></span>
+              <h1><span data-i18n="hero1">Convierte tus entrenos</span><br><span data-i18n="hero2">en</span> <span class="gradient" data-i18n="hero3">victorias.</span></h1>
+              <p class="hero-tagline" data-i18n="tagline">Entrena. Gana XP. Evoluciona en equipo.</p>
+              <p class="hero-description" data-i18n="heroDesc">FIVAKI convierte cada entrenamiento en XP, misiones, rachas y recompensas. Crea equipos, supera desafíos y escala posiciones. Tu progreso. Tu grupo. Tu legado.</p>
+              <div class="hero-actions">
+                <a class="btn btn-primary" href="#beta"><span data-i18n="joinBeta">Únete a la beta</span><span class="btn-icon">→</span></a>
+                <a class="btn btn-ghost" href="#beta"><span data-i18n="download">Descargar app</span><span class="btn-icon">●</span></a>
+              </div>
+
+              <div class="quick-features" aria-label="Funciones principales">
+                <div class="quick-item"><div class="quick-icon"><svg viewBox="0 0 40 40"><path d="M11 5h18l7 7v16l-7 7H11l-7-7V12z"/><text x="20" y="24" text-anchor="middle" fill="currentColor" stroke="none" font-size="10" font-weight="800">XP</text></svg></div><b data-i18n="qXp">Gana XP</b><small data-i18n="qXpSub">con cada entrenamiento</small></div>
+                <div class="quick-item"><div class="quick-icon"><svg viewBox="0 0 40 40"><circle cx="20" cy="20" r="13"/><circle cx="20" cy="20" r="7"/><path d="M20 20l10-10M27 10h3v3"/></svg></div><b data-i18n="qQuest">Completa misiones</b><small data-i18n="qQuestSub">supera desafíos</small></div>
+                <div class="quick-item"><div class="quick-icon"><svg viewBox="0 0 40 40"><path d="M21 4c2 7-5 9-2 15 1-4 5-5 7-10 5 5 8 10 8 16a14 14 0 1 1-28 0c0-6 3-11 8-15-1 7 2 9 4 11"/></svg></div><b data-i18n="qStreak">Crea rachas</b><small data-i18n="qStreakSub">mantén la constancia</small></div>
+                <div class="quick-item"><div class="quick-icon"><svg viewBox="0 0 40 40"><circle cx="14" cy="13" r="5"/><circle cx="27" cy="13" r="5"/><path d="M5 33v-7c0-5 4-8 9-8s9 3 9 8v7M21 21c2-2 4-3 7-3 5 0 8 3 8 8v7"/></svg></div><b data-i18n="qSquads">Equipos</b><small data-i18n="qSquadsSub">entrena acompañado</small></div>
+                <div class="quick-item"><div class="quick-icon"><svg viewBox="0 0 40 40"><path d="M12 5h16v7c0 7-3 11-8 13-5-2-8-6-8-13zM12 9H6v3c0 5 3 8 8 8M28 9h6v3c0 5-3 8-8 8M20 25v6M13 35h14M16 31h8"/></svg></div><b data-i18n="qRank">Sube en el ranking</b><small data-i18n="qRankSub">compite y progresa</small></div>
+                <div class="quick-item"><div class="quick-icon"><svg viewBox="0 0 40 40"><path d="M6 15h28v20H6zM4 10h32v8H4zM20 10v25M20 10c-6 0-9-2-9-5 0-2 2-3 4-3 4 0 5 5 5 8zM20 10c6 0 9-2 9-5 0-2-2-3-4-3-4 0-5 5-5 8z"/></svg></div><b data-i18n="qRewards">Desbloquea premios</b><small data-i18n="qRewardsSub">logros y recompensas</small></div>
+              </div>
+            </div>
+
+            <div class="hero-visual" aria-label="Vista previa conceptual de FIVAKI">
+              <div class="phone-glow"></div>
+              <div class="energy-line" aria-hidden="true"><svg viewBox="0 0 900 180" preserveAspectRatio="none"><defs><linearGradient id="energy" x1="0" x2="1"><stop offset="0" stop-color="#342058" stop-opacity="0"/><stop offset=".16" stop-color="#6b2cff"/><stop offset=".5" stop-color="#00e5ff"/><stop offset=".84" stop-color="#6b2cff"/><stop offset="1" stop-color="#342058" stop-opacity="0"/></linearGradient><filter id="blur"><feGaussianBlur stdDeviation="5"/></filter></defs><path d="M0 145 C160 142 210 42 392 106 S640 46 900 140" fill="none" stroke="url(#energy)" stroke-width="4" filter="url(#blur)" opacity=".8"/><path d="M0 145 C160 142 210 42 392 106 S640 46 900 140" fill="none" stroke="url(#energy)" stroke-width="1.2"/></svg></div>
+              <img class="phones-img" src="assets/phones.webp" alt="Tres pantallas conceptuales de la app: misiones, nivel y clasificación">
+            </div>
+          </div>
+
+          <div class="proof-strip">
+            <div class="proof-cell"><span class="proof-label" data-i18n="betaCommunity">Comunidad beta</span><div class="avatars" aria-hidden="true"><span class="avatar"></span><span class="avatar"></span><span class="avatar"></span><span class="avatar"></span><span class="avatar"></span></div></div>
+            <div class="proof-cell"><div class="proof-icon"><svg viewBox="0 0 48 48"><path d="M8 35c-5-8-4-17 2-24M13 39c-5-5-7-11-5-18M40 35c5-8 4-17-2-24M35 39c5-5 7-11 5-18M24 11l2.4 5 5.5.8-4 3.9.9 5.5-4.8-2.6-4.8 2.6.9-5.5-4-3.9 5.5-.8z"/></svg></div><div><div class="proof-number" data-i18n="privateBeta">Beta privada</div><div class="proof-text" data-i18n="earlyAccess">Acceso anticipado en preparación</div></div></div>
+            <div class="proof-cell"><div class="proof-icon"><svg viewBox="0 0 48 48"><path d="M8 35c-5-8-4-17 2-24M13 39c-5-5-7-11-5-18M40 35c5-8 4-17-2-24M35 39c5-5 7-11 5-18M18 13h12v22H18zM21 17h6M21 31h6"/></svg></div><div><div class="proof-number">Android + iOS</div><div class="proof-text" data-i18n="plannedLaunch">Lanzamiento móvil previsto</div></div></div>
+            <div class="proof-cell"><div class="proof-quote"><span data-i18n="brandQuote">“Cada entrenamiento debe sentirse como una victoria para tu yo futuro.”</span><small>— FIVAKI</small></div></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section container" id="features">
+        <div class="section-kicker" data-i18n="why">Por qué FIVAKI</div>
+        <h2 class="section-title" data-i18n="featuresTitle">Fitness más divertido, más gratificante y más tuyo.</h2>
+        <div class="feature-grid">
+          <article class="feature-card"><div class="feature-icon"><svg viewBox="0 0 44 44"><path d="M12 5h20l7 7v20l-7 7H12l-7-7V12z"/><text x="22" y="27" text-anchor="middle" fill="currentColor" stroke="none" font-size="11" font-weight="800">XP</text></svg></div><div><h3 data-i18n="f1h">Progreso gamificado</h3><p data-i18n="f1p">Gana XP y sube de nivel mientras cumples tus objetivos reales.</p></div></article>
+          <article class="feature-card"><div class="feature-icon"><svg viewBox="0 0 44 44"><circle cx="22" cy="22" r="14"/><circle cx="22" cy="22" r="7"/><path d="M22 22l11-11M30 11h3v3"/></svg></div><div><h3 data-i18n="f2h">Misiones y desafíos</h3><p data-i18n="f2p">Completa retos, desbloquea bonus y crea objetivos con sentido.</p></div></article>
+          <article class="feature-card"><div class="feature-icon"><svg viewBox="0 0 44 44"><path d="M23 4c2 8-5 10-2 17 2-5 6-6 8-12 5 5 9 11 9 18a16 16 0 1 1-32 0c0-7 4-13 9-17-1 7 2 10 5 13"/></svg></div><div><h3 data-i18n="f3h">Rachas que permanecen</h3><p data-i18n="f3p">Convierte la constancia en impulso, sin culpa ni castigos.</p></div></article>
+          <article class="feature-card"><div class="feature-icon"><svg viewBox="0 0 44 44"><circle cx="15" cy="14" r="5"/><circle cx="30" cy="14" r="5"/><path d="M5 38v-8c0-6 4-10 10-10s10 4 10 10v8M24 23c2-2 5-3 8-3 5 0 8 4 8 10v8"/></svg></div><div><h3 data-i18n="f4h">Equipos y comunidad</h3><p data-i18n="f4p">Entrena con amigos, comparte avances y crece acompañado.</p></div></article>
+          <article class="feature-card"><div class="feature-icon"><svg viewBox="0 0 44 44"><path d="M13 6h18v8c0 8-4 12-9 15-6-3-9-7-9-15zM13 10H6v4c0 5 3 9 9 9M31 10h7v4c0 5-3 9-9 9M22 29v6M14 39h16M18 35h8"/></svg></div><div><h3 data-i18n="f5h">Clasificaciones</h3><p data-i18n="f5p">Compite de forma sana, sube rangos y demuestra tu progreso.</p></div></article>
+          <article class="feature-card"><div class="feature-icon"><svg viewBox="0 0 44 44"><path d="M7 17h30v22H7zM5 11h34v8H5zM22 11v28M22 11c-7 0-10-2-10-6 0-2 2-3 5-3 4 0 5 5 5 9zM22 11c7 0 10-2 10-6 0-2-2-3-5-3-4 0-5 5-5 9z"/></svg></div><div><h3 data-i18n="f6h">Recompensas épicas</h3><p data-i18n="f6p">Desbloquea insignias, cosméticos y ventajas por tu constancia.</p></div></article>
+        </div>
+
+        <div class="mid-grid" id="how">
+          <div class="panel">
+            <div class="panel-kicker" data-i18n="howKicker">Cómo funciona</div>
+            <h3 data-i18n="howTitle">4 pasos para subir de nivel tu recorrido fitness</h3>
+            <div class="steps">
+              <div class="step"><div class="step-top"><span class="step-num">1</span><span class="step-svg"><svg viewBox="0 0 40 40"><path d="M5 16v8M9 12v16M31 12v16M35 16v8M9 20h22"/></svg></span></div><b data-i18n="s1h">Entrena</b><p data-i18n="s1p">Completa entrenamientos y alcanza objetivos.</p></div>
+              <div class="step"><div class="step-top"><span class="step-num">2</span><span class="step-svg"><svg viewBox="0 0 40 40"><circle cx="20" cy="20" r="13"/><circle cx="20" cy="20" r="7"/><path d="M20 20l10-10M27 10h3v3"/></svg></span></div><b data-i18n="s2h">Gana XP</b><p data-i18n="s2p">Cada sesión y mejora suma progreso.</p></div>
+              <div class="step"><div class="step-top"><span class="step-num">3</span><span class="step-svg"><svg viewBox="0 0 40 40"><path d="M21 4c2 7-5 9-2 15 1-4 5-5 7-10 5 5 8 10 8 16a14 14 0 1 1-28 0c0-6 3-11 8-15-1 7 2 9 4 11"/></svg></span></div><b data-i18n="s3h">Completa misiones</b><p data-i18n="s3p">Supera desafíos solo o con tu equipo.</p></div>
+              <div class="step"><div class="step-top"><span class="step-num">4</span><span class="step-svg"><svg viewBox="0 0 40 40"><path d="M20 34V9M11 18l9-9 9 9M10 28l10-10 10 10"/></svg></span></div><b data-i18n="s4h">Sube y gana</b><p data-i18n="s4p">Desbloquea niveles, premios y posiciones.</p></div>
+            </div>
+          </div>
+
+          <div class="panel rewards-panel" id="rewards">
+            <div class="panel-kicker" data-i18n="rewardsPreview">Vista previa de recompensas</div>
+            <img class="rewards-img" src="assets/rewards.webp" alt="Conceptos de recompensas FIVAKI: sudadera, botella, gorra e insignia">
+            <div class="concept-note" data-i18n="conceptNote">Diseños conceptuales; las recompensas finales pueden variar.</div>
+          </div>
+        </div>
+
+        <div class="lower-grid">
+          <article class="panel squad-panel" id="squads">
+            <div class="squad-copy"><div class="panel-kicker" data-i18n="squadKicker">Los equipos te hacen más fuerte</div><h3 data-i18n="squadTitle">Tu grupo. Tu responsabilidad. Tu ventaja.</h3><p data-i18n="squadText">Crea un equipo, anima a los demás y supera objetivos mayores acompañado.</p><a class="btn btn-primary" href="#beta" data-i18n="createSquad">Crear equipo</a></div>
+            <div class="mini-app"><div class="mini-app-head"><div><b>Alpha Squad</b><small>Elite Crew · 24</small></div><span>•••</span></div><div class="member"><span class="member-avatar"></span><div><b>Marcus K.</b><span data-i18n="member1">Completó Pierna Brutal</span></div><span class="xp">+100 XP</span></div><div class="member"><span class="member-avatar"></span><div><b>Sarah L.</b><span data-i18n="member2">Nuevo récord: peso muerto</span></div><span class="xp">🔥</span></div></div>
+          </article>
+
+          <article class="panel leader-panel" id="leaderboard">
+            <div><div class="panel-kicker" data-i18n="leaderKicker">Clasificaciones</div><h3 data-i18n="leaderTitle">Compite. Escala. Deja huella.</h3><div class="leader-table"><div class="tabs"><b data-i18n="global">Global</b><span data-i18n="friends">Amigos</span><span data-i18n="squad">Equipo</span></div><div class="rank-row"><b>1</b><span class="rank-dot"></span><strong>Sarah L.</strong><span>34.840 XP</span></div><div class="rank-row"><b>2</b><span class="rank-dot"></span><strong>Marcus K.</strong><span>32.100 XP</span></div><div class="rank-row you"><b>3</b><span class="rank-dot"></span><strong data-i18n="you">Tú</strong><span>24.250 XP</span></div><div class="rank-row"><b>4</b><span class="rank-dot"></span><strong>Jaime R.</strong><span>21.430 XP</span></div></div></div>
+            <div class="trophy-wrap"><img class="trophy-img" src="assets/trophy.webp" alt="Trofeo neón conceptual"></div>
+          </article>
+
+          <article class="panel review-panel">
+            <div class="panel-kicker" data-i18n="visionKicker">La visión FIVAKI</div><div class="stars">★★★★★</div><div class="review-score" data-i18n="visionTitle">Una experiencia que hace visible la constancia.</div><p class="review-quote" data-i18n="visionQuote">“El objetivo no es sustituir el entrenamiento, sino conseguir que quieras volver mañana y sentir orgullo por cada avance.”</p><div class="review-by">— FIVAKI</div><div class="dots"><i></i><i></i><i></i><i></i></div>
+          </article>
+        </div>
+      </section>
+
+      <section class="cta container" id="beta">
+        <div class="cta-box">
+          <img class="hoodie-img" src="assets/hoodie.webp" alt="Sudadera conceptual FIVAKI">
+          <div class="cta-copy"><h3 data-i18n="ctaTitle">¿Listo para convertir tus entrenos en victorias?</h3><p data-i18n="ctaText">Apúntate al acceso anticipado de FIVAKI.</p></div>
+          <form class="cta-form" id="waitlist">
+            <div class="form-row"><input id="email" name="email" type="email" required autocomplete="email" data-i18n-placeholder="emailPlaceholder" placeholder="Introduce tu email"><button class="btn" type="submit"><span data-i18n="earlyCta">Quiero acceso anticipado</span><span>→</span></button></div>
+            <div class="form-meta"><span data-i18n="free">Gratis</span><span data-i18n="noSpam">Sin spam</span><span data-i18n="first">Sé de los primeros</span></div>
+            <div class="form-status" id="status" aria-live="polite"></div>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container footer-grid">
+        <div class="footer-brand"><a class="logo" href="#top"><img src="assets/logo.webp" alt="FIVAKI"></a><div class="footer-tagline" data-i18n="footerTagline">Entrena · Gana XP · Compite · Repite</div><div class="socials"><a href="#" aria-label="Discord">◈</a><a href="#" aria-label="Instagram">◎</a><a href="#" aria-label="TikTok">♪</a><a href="#" aria-label="X">𝕏</a></div></div>
+        <div class="footer-links"><div><b data-i18n="product">Producto</b><a href="#features" data-i18n="navFeatures">Características</a><a href="#how" data-i18n="navHow">Cómo funciona</a><a href="#leaderboard" data-i18n="navLeaderboard">Clasificación</a><a href="#rewards" data-i18n="navRewards">Recompensas</a></div><div><b data-i18n="company">Empresa</b><a href="#top" data-i18n="about">Sobre FIVAKI</a><a href="#beta" data-i18n="press">Kit de prensa</a><a href="#beta" data-i18n="contact">Contacto</a></div><div id="faq"><b data-i18n="support">Soporte</b><a href="#beta">FAQ</a><a href="#beta" data-i18n="help">Centro de ayuda</a><a href="#beta" data-i18n="privacy">Privacidad</a></div></div>
+        <div class="footer-legal"><div class="legal-links"><a href="#" data-i18n="privacy">Privacidad</a><a href="#" data-i18n="terms">Términos</a><a href="#" data-i18n="cookies">Cookies</a></div><div class="copyright">© 2026 FIVAKI.<br><span data-i18n="rights">Todos los derechos reservados.</span></div></div>
+      </div>
+    </footer>
+  </div>
+</div>
+
+<script src="app.js"></script>
 </body>
 </html>
